@@ -3,39 +3,65 @@
 <head>
 	<title>iWebSG</title>
 	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<nav>
-			<a href="#index.html">Home</a>
-			<a href="#About">About</a>
-			<a href="http://iwebsg.com/portfolio">Portfolio</a>
-			<a href=""></a>
-			<a href=""></a>
-			<a href=""></a>
+	<header class="container group">
+		<h1>
+			<a class="logo" href="#index.html">iWebSG</a>
+		</h1>
+		<nav class="nav primary-nav">
+			<a href="index.html">home</a>
+			<a href="about.html">about</a>
+			<a href="portfolio.html">portfolio</a>
+			<a href="blog.html">articles</a>
+			<a href="contact.html">contact</a>
+			<form>
+				<input class="search" type="search" placeholder="Search">
+			</form>
 		</nav>
-		<div>
-			<h1>freelance developer | SG</h1>
-			<h3><em>Loves design &amp; development. And ramen.</em></h3>
-		</div>
 	</header>
 
-	<section>
-		
-		<section>
-			<div class="container">
-				<h2>About me</h2>
-				<p>Hi, thanks for visiting my site! I am a web designer and developer, based in Singapore. I love to craft solutions with good code. I work in HTML5, CSS3, Javascript &amp; Wordpress.</p>
-				<p>I am available for hire!</p>
-			</div>
+	<section class="container hero">
+			<h2>freelance web design &amp; development</h2>
+			<h3>HTML5, CSS3, Javascript &amp; Wordpress</em></h3>
+			<p>Hi, I'm Ethan. Thanks for visiting! I love creative problem-solving, good code and visual design to add value to clients and users.</p>
+			<p>I am available for hire!</p>
+			<a href="#" class="btn btn-alt">Get in touch!</a>
 		</section>
+
+	<section class="grid">
 		
-		<section>
-			<div class="container">
-				<h2>Latest Work</h2>
+		<section class="col-2-3">
+			<div>
+				<h2>latest work</h2>
 			</div>
+
+			<div>
+				<h3><a href="">Tic Tac Toe Game</a></h3>
+				<p>Integer gravida rutrum risus id consequat. Donec tempus est eget lorem scelerisque, nec rutrum enim egestas. Donec elit massa, posuere at est ut, placerat sagittis sapien.</p>
+			</div>
+			<div>
+				<h3><a href="">Pomodoro Clock</a></h3>
+				<p>Integer gravida rutrum risus id consequat. Donec tempus est eget lorem scelerisque, nec rutrum enim egestas. Donec elit massa, posuere at est ut, placerat sagittis sapien.</p>
+			</div>
+			<div>
+				<h3><a href="">Javascript Calculator</a></h3>
+				<p>Integer gravida rutrum risus id consequat. Donec tempus est eget lorem scelerisque, nec rutrum enim egestas. Donec elit massa, posuere at est ut, placerat sagittis sapien.</p>
+			</div>
+			<h3 class="read-more"><a href="portfolio.html">See More!</a></h3>
 		</section>
 
 	</section>
+	<footer class="primary-footer container group">
+		<small>&copy; 2017 iWebSG</small>
+		<nav class="nav">
+			<a href="index.html">home</a>
+			<a href="about.html">about</a>
+			<a href="portfolio.html">portfolio</a>
+			<a href="blog.html">articles</a>
+			<a href="contact.html">contact</a>
+		</nav>
+	</footer>
 </body>
 </html>
