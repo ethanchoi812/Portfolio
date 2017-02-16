@@ -250,7 +250,7 @@ a {
 
 .hero p {
   font-size: 22px;
-  line-height: 28px;
+  line-height: 22px;
 }
 
 .hero i{
@@ -301,18 +301,24 @@ a {
 }
 
 .primary-nav {
-  padding: 28px 0 22px 0;
+  padding: 16px 0 10px 0;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: .5px;
 }
 
 .primary-nav a{
-  color: #323232;
+  color: #fff;
 }
 
-.primary-nav a:hover{
-  color: #fff;
+.primary-nav li{
+  margin: 0;
+  border-radius: 5px;
+  padding: 12px 15px;
+}
+
+.primary-nav li:hover {
+  background-color: rgba(120, 120, 120, 0.5);
 }
 
 .search{
