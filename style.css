@@ -230,7 +230,7 @@ a {
 
 /*
   ========================================
-  Home
+  Hero
   ========================================
 */
 
@@ -250,17 +250,19 @@ a {
 
 .hero p {
   font-size: 22px;
-  line-height: 28px;
+  line-height: 44px;
+  margin-bottom: 44px;
 }
 
 .hero i{
   color: #fff;
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .hero i:hover {
   color: #dbdbdb;
 }
+
 /*
   ========================================
   Clearfix
@@ -307,11 +309,18 @@ a {
   letter-spacing: .5px;
 }
 
-.primary-nav a{
-  color: #323232;
+.primary-nav li{
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 5px 12px;
 }
 
-.primary-nav a:hover{
+.primary-nav li:hover{
+  color: #ccc;
+  background-color: rgba(200, 200, 200, 0.7);
+}
+
+.primary-nav a{
   color: #fff;
 }
 
@@ -323,10 +332,6 @@ a {
   border-radius: 25px;
   border: none;
   color: #333;
-}
-
-a.logo:hover {
-  color:#fff;
 }
 
 .logo {

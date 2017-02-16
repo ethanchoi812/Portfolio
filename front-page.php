@@ -1,13 +1,21 @@
 	<?php get_header(); ?>
 
 	<section class="container hero">
-			<h2>Hi, I'm Ethan Choi</h2>
-			<h3>web designer &amp; developer | HTML5, CSS3, Javascript &amp; Wordpress</em></h3>
-			<p>I love using good code &amp; pretty design to build awesome stuff for people!</p>
-			<p>I am available for hire!</p>
-			<a href="contact" class="btn btn-alt">Get in touch!</a>
-			<a href="github.com/ethanchoi812"><i class="fa fa-github fa-2x fw"></i></a>
-			<a href="linkedin.com/ethanchoi"><i class="fa fa-linkedin fa-2x fw"></i></a>
+			<h2><?php echo get_theme_mod('hero_header', 'iwebsg'); ?></h2>
+			<h3><?php echo get_theme_mod('hero_subheader', 'iwebsg'); ?></em></h3>
+			<p><?php echo get_theme_mod('hero_description', 'iwebsg'); ?></p>
+			<?php if(get_theme_mod('hero_button', 'iwebsg.com/contact') != '') : ?>
+				<a href="<?php echo get_theme_mod('hero_button', 'iwebsg'); ?>" class="btn btn-alt"><?php echo get_theme_mod('hero_button_text', 'hire me!'); ?></a>
+			<?php endif; ?>
+			<?php if(get_theme_mod('twitter_url', 'http://www.twitter.com') != '') : ?>
+				<a href="<?php echo get_theme_mod('twitter_url', 'http://www.twitter.com'); ?>" target="_blank"><i class="fa fa-twitter fa-2x fw"></i></a>
+			<?php endif; ?>
+			<?php if(get_theme_mod('github_url', 'http://www.github.com') != '') : ?>
+				<a href="<?php echo get_theme_mod('github_url', 'http://www.github.com'); ?>" target="_blank"><i class="fa fa-github fa-2x fw"></i></a>
+			<?php endif; ?>
+			<?php if(get_theme_mod('linkedin_url', 'http://www.linkedin.com') != '') : ?>
+				<a href="<?php echo get_theme_mod('linkedin_url', 'http://www.linkedin.com'); ?>" target="_blank"><i class="fa fa-linkedin fa-2x fw"></i></a>
+			<?php endif; ?>
 		</section>
 
 	<section class="row portfolio-showcase">
