@@ -122,63 +122,224 @@
 	  		));
 
 		// Showcase section A
-		$wp_customize->add_section('showcase_section', array(
+		$wp_customize->add_section('showcase_section_a', array(
 				'title'	=> __('Showcase Section A', 'iwebsg'),
-				'panel' => 'showcase',
-				'description'	=> sprintf( __('Options for showcase area', 'iwebsg')
+				'description'	=> sprintf( __('Options for Showcase Area A', 'iwebsg')
 					),
-				'priority'		=> 135,
+				'priority'		=> 145,
 			));
 
+		//Image setting
+		$wp_customize->add_setting( 'showcase_image_a', array(
+			  'type' => 'theme_mod',
+			  'default' => get_bloginfo('template_directory').'/img/default.jpg',
+			));
+
+		//Image control
+		$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'showcase_image', array(
+			  'priority' => 1, // Within the section.
+			  'section' => 'showcase_section_a', // Required, core or custom.
+			  'label' => __( 'Showcase Image', 'iwebsg' ),
+			  'settings' => 'showcase_image_a',
+	  		)));
+
 		//Section Heading setting
-		$wp_customize->add_setting( 'showcase_header_title', array(
+		$wp_customize->add_setting( 'showcase_header_title_a', array(
 			  'type' => 'theme_mod',
 			  'default' => _x('Front End Projects', 'iwebsg')
 			));
 
 		//Section heading control
-		$wp_customize->add_control( 'showcase_header_title', array(
-			  'priority' => 1, // Within the section.
-			  'section' => 'showcase', // Required, core or custom.
+		$wp_customize->add_control( 'showcase_header_title_a', array(
+			  'priority' => 2, // Within the section.
+			  'section' => 'showcase_section_a', // Required, core or custom.
 			  'label' => __( 'Section Header', 'iwebsg' ),
 	  		));
 
 		//Title setting
-		$wp_customize->add_setting( 'showcase_item_title', array(
+		$wp_customize->add_setting( 'showcase_item_title_a', array(
 			  'type' => 'theme_mod',
 			  'default' => _x('My Awesome App', 'iwebsg')
 			));
 
 		//Title control
-		$wp_customize->add_control( 'showcase_item_title', array(
-			  'priority' => 1, // Within the section.
-			  'section' => 'showcase', // Required, core or custom.
+		$wp_customize->add_control( 'showcase_item_title_a', array(
+			  'priority' => 3, // Within the section.
+			  'section' => 'showcase_section_a', // Required, core or custom.
 			  'label' => __( 'Title of work', 'iwebsg' ),
 	  		));
 
 		//Text Setting 
-		$wp_customize->add_setting( 'showcase_text', array(
+		$wp_customize->add_setting( 'showcase_text_a', array(
 			  'type' => 'theme_mod',
 			  'default' => _x('My Awesome App was made with plain awesomeness Javascript.', 'iwebsg')
 			));
 
 		//Text Controls 
-		$wp_customize->add_control( 'showcase_text', array(
-			  'priority' => 2, // Within the section.
-			  'section' => 'showcase', // Required, core or custom.
+		$wp_customize->add_control( 'showcase_text_a', array(
+			  'priority' => 4, // Within the section.
+			  'section' => 'showcase_section_a', // Required, core or custom.
 			  'label' => __( 'Description', 'iwebsg' ),
 	  		));
 
 		//URL Setting 
-		$wp_customize->add_setting( 'showcase_url', array(
+		$wp_customize->add_setting( 'showcase_url_a', array(
 			  'type' => 'theme_mod',
 			  'default' => _x('http://iwebsg.com/portfolio', 'iwebsg')
 			));
 
 		//URL Controls 
-		$wp_customize->add_control( 'showcase_url', array(
+		$wp_customize->add_control( 'showcase_url_a', array(
+			  'priority' => 5, // Within the section.
+			  'section' => 'showcase_section_a', // Required, core or custom.
+			  'label' => __( 'Link to work', 'iwebsg' ),
+	  		));
+
+		// Showcase section B
+		$wp_customize->add_section('showcase_section_b', array(
+				'title'	=> __('Showcase Section B', 'iwebsg'),
+				'description'	=> sprintf( __('Options for showcase area B', 'iwebsg')
+					),
+				'priority'		=> 155,
+			));
+
+		//Image setting
+		$wp_customize->add_setting( 'showcase_image_b', array(
+			  'type' => 'theme_mod',
+			  'default' => get_bloginfo('template_directory').'/img/default.jpg',
+			));
+
+		//Image control
+		$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'showcase_image', array(
+			  'priority' => 1, // Within the section.
+			  'section' => 'showcase_section_b', // Required, core or custom.
+			  'label' => __( 'Showcase Image B', 'iwebsg' ),
+			  'settings' => 'showcase_image_b',
+	  		)));
+
+		//Section Heading setting
+		$wp_customize->add_setting( 'showcase_header_title_b', array(
+			  'type' => 'theme_mod',
+			  'default' => _x('Front End Projects', 'iwebsg')
+			));
+
+		//Section heading control
+		$wp_customize->add_control( 'showcase_header_title_b', array(
+			  'priority' => 2, // Within the section.
+			  'section' => 'showcase_section_b', // Required, core or custom.
+			  'label' => __( 'Section Header', 'iwebsg' ),
+	  		));
+
+		//Title setting
+		$wp_customize->add_setting( 'showcase_item_title_b', array(
+			  'type' => 'theme_mod',
+			  'default' => _x('My Awesome App', 'iwebsg')
+			));
+
+		//Title control
+		$wp_customize->add_control( 'showcase_item_title_b', array(
 			  'priority' => 3, // Within the section.
-			  'section' => 'showcase', // Required, core or custom.
+			  'section' => 'showcase_section_b', // Required, core or custom.
+			  'label' => __( 'Title of work', 'iwebsg' ),
+	  		));
+
+		//Text Setting 
+		$wp_customize->add_setting( 'showcase_text_b', array(
+			  'type' => 'theme_mod',
+			  'default' => _x('My Awesome App was made with plain awesomeness Javascript.', 'iwebsg')
+			));
+
+		//Text Controls 
+		$wp_customize->add_control( 'showcase_text_b', array(
+			  'priority' => 4, // Within the section.
+			  'section' => 'showcase_section_B', // Required, core or custom.
+			  'label' => __( 'Description', 'iwebsg' ),
+	  		));
+
+		//URL Setting 
+		$wp_customize->add_setting( 'showcase_url_b', array(
+			  'type' => 'theme_mod',
+			  'default' => _x('http://iwebsg.com/portfolio', 'iwebsg')
+			));
+
+		//URL Controls 
+		$wp_customize->add_control( 'showcase_url_b', array(
+			  'priority' => 5, // Within the section.
+			  'section' => 'showcase_section_b', // Required, core or custom.
+			  'label' => __( 'Link to work', 'iwebsg' ),
+	  		));
+
+		// Showcase section C
+		$wp_customize->add_section('showcase_section_c', array(
+				'title'	=> __('Showcase Section C', 'iwebsg'),
+				'description'	=> sprintf( __('Options for showcase area C', 'iwebsg')
+					),
+				'priority'		=> 165,
+			));
+
+		//Image setting
+		$wp_customize->add_setting( 'showcase_image_c', array(
+			  'type' => 'theme_mod',
+			  'default' => get_bloginfo('template_directory').'/img/default.jpg',
+			));
+
+		//Image control
+		$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'showcase_image', array(
+			  'priority' => 1, // Within the section.
+			  'section' => 'showcase_section_c', // Required, core or custom.
+			  'label' => __( 'Showcase Image C', 'iwebsg' ),
+			  'settings' => 'showcase_image_c',
+	  		)));
+
+		//Section Heading setting
+		$wp_customize->add_setting( 'showcase_header_title_c', array(
+			  'type' => 'theme_mod',
+			  'default' => _x('Front End Projects', 'iwebsg')
+			));
+
+		//Section heading control
+		$wp_customize->add_control( 'showcase_header_title_c', array(
+			  'priority' => 2, // Within the section.
+			  'section' => 'showcase_section_c', // Required, core or custom.
+			  'label' => __( 'Section Header', 'iwebsg' ),
+	  		));
+
+		//Title setting
+		$wp_customize->add_setting( 'showcase_item_title_c', array(
+			  'type' => 'theme_mod',
+			  'default' => _x('My Awesome App', 'iwebsg')
+			));
+
+		//Title control
+		$wp_customize->add_control( 'showcase_item_title_c', array(
+			  'priority' => 3, // Within the section.
+			  'section' => 'showcase_section_c', // Required, core or custom.
+			  'label' => __( 'Title of work', 'iwebsg' ),
+	  		));
+
+		//Text Setting 
+		$wp_customize->add_setting( 'showcase_text_c', array(
+			  'type' => 'theme_mod',
+			  'default' => _x('My Awesome App was made with plain awesomeness Javascript.', 'iwebsg')
+			));
+
+		//Text Controls 
+		$wp_customize->add_control( 'showcase_text_c', array(
+			  'priority' => 4, // Within the section.
+			  'section' => 'showcase_section_c', // Required, core or custom.
+			  'label' => __( 'Description', 'iwebsg' ),
+	  		));
+
+		//URL Setting 
+		$wp_customize->add_setting( 'showcase_url_c', array(
+			  'type' => 'theme_mod',
+			  'default' => _x('http://iwebsg.com/portfolio', 'iwebsg')
+			));
+
+		//URL Controls 
+		$wp_customize->add_control( 'showcase_url_c', array(
+			  'priority' => 5, // Within the section.
+			  'section' => 'showcase_section_c', // Required, core or custom.
 			  'label' => __( 'Link to work', 'iwebsg' ),
 	  		));
 

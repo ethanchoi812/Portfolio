@@ -81,7 +81,7 @@ table {
 }
 
 .col-1-3 {
-  width: 33.33%;
+  width: 33%;
 }
 .col-2-3 {
   width: 66.66%;
@@ -168,10 +168,12 @@ h1 {
 h2 {
   font-size: 32px;
   line-height: 44px;
+  color:#8e8e8e;
 }
 
 h3 {
   font-size: 21px;
+  color: #0084ff;
 }
 
 h4 {
@@ -317,7 +319,7 @@ a {
 
 .primary-nav li:hover{
   color: #ccc;
-  background-color: rgba(200, 200, 200, 0.7);
+  background-color: rgba(0, 85, 150, 0.7);
 }
 
 .primary-nav a{
@@ -388,14 +390,30 @@ body {
   
 }
 
+.section-heading{
+  margin-bottom: 44px;
+  border-bottom: 2px solid #e0e0e0;
+  text-align: center;
+}
+
+.showcase-img{
+  border-radius: 5px;
+  display: block;
+  height: 130px;
+  margin-bottom: 22px;
+  max-width: 100%;
+}
+
 .sub-section {
   margin-bottom: 44px;
 }
 
-.section-heading{
-  margin-bottom: 44px;
-  border-bottom: 8px solid #e0e0e0;
-  text-align: right;
+.teaser h3:hover, .read-more h3:hover{
+  color:#83c3ff;
+}
+
+.teaser h3, .read-more h3{
+  color:#0084ff; 
 }
 
 .read-more {

@@ -20,17 +20,33 @@
 
 	<section class="row portfolio-showcase">
 		<div class="grid">
-			<section class="col-2-3">
 				<div class="section-heading">
 					<h2>latest work</h2>
 				</div>
-				<div class="sub-section">
-					<h3><a href="<?php echo get_theme_mod('showcase_url', 'http://www.iwebsg.com/portfolio'); ?>"><?php echo get_theme_mod('showcase_title', 'My Awesome App'); ?></a></h3>
-					<p><?php echo get_theme_mod('showcase_text', 'My Awesome App was made with plain awesomeness Javascript'); ?></p>
-					<h5 class="tags javascript-tag"><a href=""><?php echo get_theme_mod('showcase_tag', 'Javascript'); ?></a></h5>
+				<section class="sub-section teaser col-1-3">
+					<a href="<?php echo get_theme_mod('showcase_url_a', 'http://www.iwebsg.com/portfolio'); ?>">
+						<img class="showcase-img" src="<?php echo get_theme_mod('showcase_image', get_bloginfo('template_directory').'/img/default.jpg'); ?>">
+						<h3><?php echo get_theme_mod('showcase_title_a', 'My Awesome App'); ?></h3>
+					</a>
+					<p><?php echo get_theme_mod('showcase_text_a', 'My Awesome App was made with plain awesomeness Javascript'); ?></p>
+				</section>
+				<section class="sub-section teaser col-1-3">
+					<a href="<?php echo get_theme_mod('showcase_url_b', 'http://www.iwebsg.com/portfolio'); ?>">
+						<img class="showcase-img" src="<?php echo get_theme_mod('showcase_image_b', get_bloginfo('template_directory').'/img/default.jpg'); ?>">
+						<h3><?php echo get_theme_mod('showcase_title_b', 'My Awesome App'); ?></h3>
+					</a>
+					<p><?php echo get_theme_mod('showcase_text_b', 'My Awesome App was made with plain awesomeness Javascript'); ?></p>
+				</section>
+				<section class="sub-section teaser col-1-3">
+					<a href="<?php echo get_theme_mod('showcase_url_c', 'http://www.iwebsg.com/portfolio'); ?>">
+						<img class="showcase-img" src="<?php echo get_theme_mod('showcase_image_c', get_bloginfo('template_directory').'/img/default.jpg'); ?>">
+						<h3><?php echo get_theme_mod('showcase_title_c', 'My Awesome App'); ?></h3>
+					</a>
+					<p><?php echo get_theme_mod('showcase_text_c', 'My Awesome App was made with plain awesomeness Javascript'); ?></p>
+				</section>
+				<div class="read-more">
+					<a href="iwebsg.com/portfolio"><h3>See More!</h3></a>
 				</div>
-				<h3 class="read-more"><a href="portfolio.html">See More!</a></h3>
 			</div>
-		</section>
 	</section>
 <?php get_footer(); ?>
