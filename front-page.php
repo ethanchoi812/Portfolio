@@ -1,11 +1,11 @@
 	<?php get_header(); ?>
 
 	<section class="container hero">
-			<h2><?php echo get_theme_mod('hero_header', 'iwebsg'); ?></h2>
-			<h3><?php echo get_theme_mod('hero_subheader', 'iwebsg'); ?></em></h3>
-			<p><?php echo get_theme_mod('hero_description', 'iwebsg'); ?></p>
+			<h2><?php echo get_theme_mod('hero_header', 'Welcome to my portfolio site!'); ?></h2>
+			<h3><?php echo get_theme_mod('hero_subheader', 'This is my portfolio site'); ?></em></h3>
+			<p><?php echo get_theme_mod('hero_description', 'This is my portfolio site'); ?></p>
 			<?php if(get_theme_mod('hero_button', 'iwebsg.com/contact') != '') : ?>
-				<a href="<?php echo get_theme_mod('hero_button', 'iwebsg'); ?>" class="btn btn-alt"><?php echo get_theme_mod('hero_button_text', 'hire me!'); ?></a>
+				<a href="<?php echo get_theme_mod('hero_button_link', 'iwebsg.com/contact'); ?>" class="btn btn-alt"><?php echo get_theme_mod('hero_button_text', 'hire me!'); ?></a>
 			<?php endif; ?>
 			<?php if(get_theme_mod('twitter_url', 'http://www.twitter.com') != '') : ?>
 				<a href="<?php echo get_theme_mod('twitter_url', 'http://www.twitter.com'); ?>" target="_blank"><i class="fa fa-twitter fa-2x fw"></i></a>
@@ -25,7 +25,7 @@
 				</div>
 				<section class="sub-section teaser col-1-3">
 					<a href="<?php echo get_theme_mod('showcase_url_a', 'http://www.iwebsg.com/portfolio'); ?>">
-						<img class="showcase-img" src="<?php echo get_theme_mod('showcase_image', get_bloginfo('template_directory').'/img/default.jpg'); ?>">
+						<img class="showcase-img" src="<?php echo get_theme_mod('showcase_image_a', get_bloginfo('template_directory').'/img/default.jpg'); ?>">
 						<h3><?php echo get_theme_mod('showcase_title_a', 'My Awesome App'); ?></h3>
 					</a>
 					<p><?php echo get_theme_mod('showcase_text_a', 'My Awesome App was made with plain awesomeness Javascript'); ?></p>

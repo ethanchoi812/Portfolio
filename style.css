@@ -252,8 +252,9 @@ a {
 
 .hero p {
   font-size: 22px;
-  line-height: 44px;
+  line-height: 28px;
   margin-bottom: 44px;
+  margin-top: 22px;
 }
 
 .hero i{
@@ -402,6 +403,13 @@ body {
   height: 130px;
   margin-bottom: 22px;
   max-width: 100%;
+  opacity: 1;
+  backface-visibility: hidden;
+}
+
+.showcase-img:hover{
+  opacity: 0.5;
+
 }
 
 .sub-section {

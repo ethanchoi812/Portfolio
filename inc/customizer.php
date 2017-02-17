@@ -49,29 +49,29 @@
 	  		));
 
 		//Hero button setting
-		$wp_customize->add_setting( 'hero_button', array(
+		$wp_customize->add_setting( 'hero_button_link', array(
 			  'type' => 'theme_mod',
 			  'default' => _x('iwebsg.com/contact', 'iwebsg')
 			));
 
 		//Hero button control
-		$wp_customize->add_control( 'hero_button', array(
+		$wp_customize->add_control( 'hero_button_link', array(
 			  'priority' => 3, // Within the section.
 			  'section' => 'hero', // Required, core or custom.
-			  'label' => __( 'Hero Button Text', 'iwebsg' ),
+			  'label' => __( 'Hero Button Link', 'iwebsg' ),
 	  		));
 
 		//Hero button text setting
-		$wp_customize->add_setting( 'hero_button', array(
+		$wp_customize->add_setting( 'hero_button_text', array(
 			  'type' => 'theme_mod',
 			  'default' => _x('Hire me!', 'iwebsg')
 			));
 
 		//Hero button text control
-		$wp_customize->add_control( 'hero_button', array(
+		$wp_customize->add_control( 'hero_button_text', array(
 			  'priority' => 3, // Within the section.
 			  'section' => 'hero', // Required, core or custom.
-			  'label' => __( 'Hero Button', 'iwebsg' ),
+			  'label' => __( 'Hero Button Text', 'iwebsg' ),
 	  		));
 
 		//Social section
@@ -136,7 +136,7 @@
 			));
 
 		//Image control
-		$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'showcase_image', array(
+		$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'showcase_image_a', array(
 			  'priority' => 1, // Within the section.
 			  'section' => 'showcase_section_a', // Required, core or custom.
 			  'label' => __( 'Showcase Image', 'iwebsg' ),
@@ -210,7 +210,7 @@
 			));
 
 		//Image control
-		$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'showcase_image', array(
+		$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'showcase_image_b', array(
 			  'priority' => 1, // Within the section.
 			  'section' => 'showcase_section_b', // Required, core or custom.
 			  'label' => __( 'Showcase Image B', 'iwebsg' ),
@@ -274,7 +274,7 @@
 				'title'	=> __('Showcase Section C', 'iwebsg'),
 				'description'	=> sprintf( __('Options for showcase area C', 'iwebsg')
 					),
-				'priority'		=> 165,
+				'priority'		=> 160,
 			));
 
 		//Image setting
@@ -284,7 +284,7 @@
 			));
 
 		//Image control
-		$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'showcase_image', array(
+		$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'showcase_image_c', array(
 			  'priority' => 1, // Within the section.
 			  'section' => 'showcase_section_c', // Required, core or custom.
 			  'label' => __( 'Showcase Image C', 'iwebsg' ),
