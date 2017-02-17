@@ -252,13 +252,10 @@ a {
 
 .hero p {
   font-size: 22px;
-<<<<<<< HEAD
   line-height: 22px;
-=======
   line-height: 28px;
   margin-bottom: 44px;
   margin-top: 22px;
->>>>>>> branch-1
 }
 
 .hero i{
@@ -316,7 +313,6 @@ a {
   letter-spacing: .5px;
 }
 
-<<<<<<< HEAD
 .primary-nav a{
   color: #fff;
 }
@@ -329,7 +325,8 @@ a {
 
 .primary-nav li:hover {
   background-color: rgba(120, 120, 120, 0.5);
-=======
+}
+
 .primary-nav li{
   margin-right: 5px;
   border-radius: 5px;
@@ -343,7 +340,6 @@ a {
 
 .primary-nav a{
   color: #fff;
->>>>>>> branch-1
 }
 
 .search{

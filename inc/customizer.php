@@ -143,18 +143,6 @@
 			  'settings' => 'showcase_image_a',
 	  		)));
 
-		//Section Heading setting
-		$wp_customize->add_setting( 'showcase_header_title_a', array(
-			  'type' => 'theme_mod',
-			  'default' => _x('Front End Projects', 'iwebsg')
-			));
-
-		//Section heading control
-		$wp_customize->add_control( 'showcase_header_title_a', array(
-			  'priority' => 2, // Within the section.
-			  'section' => 'showcase_section_a', // Required, core or custom.
-			  'label' => __( 'Section Header', 'iwebsg' ),
-	  		));
 
 		//Title setting
 		$wp_customize->add_setting( 'showcase_item_title_a', array(
@@ -164,7 +152,7 @@
 
 		//Title control
 		$wp_customize->add_control( 'showcase_item_title_a', array(
-			  'priority' => 3, // Within the section.
+			  'priority' => 2, // Within the section.
 			  'section' => 'showcase_section_a', // Required, core or custom.
 			  'label' => __( 'Title of work', 'iwebsg' ),
 	  		));
@@ -177,7 +165,7 @@
 
 		//Text Controls 
 		$wp_customize->add_control( 'showcase_text_a', array(
-			  'priority' => 4, // Within the section.
+			  'priority' => 3, // Within the section.
 			  'section' => 'showcase_section_a', // Required, core or custom.
 			  'label' => __( 'Description', 'iwebsg' ),
 	  		));
@@ -190,7 +178,7 @@
 
 		//URL Controls 
 		$wp_customize->add_control( 'showcase_url_a', array(
-			  'priority' => 5, // Within the section.
+			  'priority' => 4, // Within the section.
 			  'section' => 'showcase_section_a', // Required, core or custom.
 			  'label' => __( 'Link to work', 'iwebsg' ),
 	  		));
@@ -217,19 +205,6 @@
 			  'settings' => 'showcase_image_b',
 	  		)));
 
-		//Section Heading setting
-		$wp_customize->add_setting( 'showcase_header_title_b', array(
-			  'type' => 'theme_mod',
-			  'default' => _x('Front End Projects', 'iwebsg')
-			));
-
-		//Section heading control
-		$wp_customize->add_control( 'showcase_header_title_b', array(
-			  'priority' => 2, // Within the section.
-			  'section' => 'showcase_section_b', // Required, core or custom.
-			  'label' => __( 'Section Header', 'iwebsg' ),
-	  		));
-
 		//Title setting
 		$wp_customize->add_setting( 'showcase_item_title_b', array(
 			  'type' => 'theme_mod',
@@ -238,7 +213,7 @@
 
 		//Title control
 		$wp_customize->add_control( 'showcase_item_title_b', array(
-			  'priority' => 3, // Within the section.
+			  'priority' => 2, // Within the section.
 			  'section' => 'showcase_section_b', // Required, core or custom.
 			  'label' => __( 'Title of work', 'iwebsg' ),
 	  		));
@@ -251,7 +226,7 @@
 
 		//Text Controls 
 		$wp_customize->add_control( 'showcase_text_b', array(
-			  'priority' => 4, // Within the section.
+			  'priority' => 3, // Within the section.
 			  'section' => 'showcase_section_B', // Required, core or custom.
 			  'label' => __( 'Description', 'iwebsg' ),
 	  		));
@@ -264,7 +239,7 @@
 
 		//URL Controls 
 		$wp_customize->add_control( 'showcase_url_b', array(
-			  'priority' => 5, // Within the section.
+			  'priority' => 4, // Within the section.
 			  'section' => 'showcase_section_b', // Required, core or custom.
 			  'label' => __( 'Link to work', 'iwebsg' ),
 	  		));
@@ -291,19 +266,6 @@
 			  'settings' => 'showcase_image_c',
 	  		)));
 
-		//Section Heading setting
-		$wp_customize->add_setting( 'showcase_header_title_c', array(
-			  'type' => 'theme_mod',
-			  'default' => _x('Front End Projects', 'iwebsg')
-			));
-
-		//Section heading control
-		$wp_customize->add_control( 'showcase_header_title_c', array(
-			  'priority' => 2, // Within the section.
-			  'section' => 'showcase_section_c', // Required, core or custom.
-			  'label' => __( 'Section Header', 'iwebsg' ),
-	  		));
-
 		//Title setting
 		$wp_customize->add_setting( 'showcase_item_title_c', array(
 			  'type' => 'theme_mod',
@@ -312,7 +274,7 @@
 
 		//Title control
 		$wp_customize->add_control( 'showcase_item_title_c', array(
-			  'priority' => 3, // Within the section.
+			  'priority' => 2, // Within the section.
 			  'section' => 'showcase_section_c', // Required, core or custom.
 			  'label' => __( 'Title of work', 'iwebsg' ),
 	  		));
@@ -325,7 +287,7 @@
 
 		//Text Controls 
 		$wp_customize->add_control( 'showcase_text_c', array(
-			  'priority' => 4, // Within the section.
+			  'priority' => 3, // Within the section.
 			  'section' => 'showcase_section_c', // Required, core or custom.
 			  'label' => __( 'Description', 'iwebsg' ),
 	  		));
@@ -338,7 +300,7 @@
 
 		//URL Controls 
 		$wp_customize->add_control( 'showcase_url_c', array(
-			  'priority' => 5, // Within the section.
+			  'priority' => 4, // Within the section.
 			  'section' => 'showcase_section_c', // Required, core or custom.
 			  'label' => __( 'Link to work', 'iwebsg' ),
 	  		));

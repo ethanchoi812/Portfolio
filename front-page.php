@@ -47,7 +47,6 @@
 				<div class="read-more">
 					<a href="iwebsg.com/portfolio"><h3>See More!</h3></a>
 				</div>
-				<h3 class="read-more"><a href="iwebsg.com/portfolio">See More!</a></h3>
 			</div>
 	</section>
 <?php get_footer(); ?>
