@@ -35,14 +35,14 @@
 				<section class="sub-section teaser group">
 					<a href="<?php echo get_theme_mod('showcase_url_b', 'http://www.iwebsg.com/portfolio'); ?>">
 						<img class="showcase-img" src="<?php echo get_theme_mod('showcase_image_b', get_bloginfo('template_directory').'/img/default.jpg'); ?>">
-						<h3><?php echo get_theme_mod('showcase_title_b', 'My Awesome App'); ?></h3>
+						<h3><?php echo get_theme_mod('showcase_item_title_b', 'My Awesome App'); ?></h3>
 					</a>
 					<p><?php echo get_theme_mod('showcase_text_b', 'My Awesome App was made with plain awesomeness Javascript'); ?></p>
 				</section>
 				<section class="sub-section teaser group">
 					<a href="<?php echo get_theme_mod('showcase_url_c', 'http://www.iwebsg.com/portfolio'); ?>">
 						<img class="showcase-img" src="<?php echo get_theme_mod('showcase_image_c', get_bloginfo('template_directory').'/img/default.jpg'); ?>">
-						<h3><?php echo get_theme_mod('showcase_title_c', 'My Awesome App'); ?></h3>
+						<h3><?php echo get_theme_mod('showcase_item_title_c', 'My Awesome App'); ?></h3>
 					</a>
 					<p><?php echo get_theme_mod('showcase_text_c', 'My Awesome App was made with plain awesomeness Javascript'); ?></p>
 				</section>
@@ -54,9 +54,6 @@
 				<?php if(is_active_sidebar('sidebar')) : ?>
          			 <?php dynamic_sidebar('sidebar'); ?>
         		<?php endif; ?>
-        		<div class="see-all">
-        			<a href="iwebsg.com/articles">See all</a>
-        		</div>
 			</section>
 		</div>
 	</section>

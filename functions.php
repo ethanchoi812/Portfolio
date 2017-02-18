@@ -24,7 +24,7 @@ function init_widgets($id){
 		'name'		=> 'Sidebar',
 		'id'		=> 'sidebar',
 		'before_widget'	=> '<div class="sidebar-widget">',
-		'after_widget' => '</div>',
+		'after_widget' => '</div><div class="see-all"><a href="iwebsg.com/articles">See all</a></div>',
 		'before_title' => '<div class="section-heading"><h2>',
 		'after_title'	=> '</h2></div>'
 		));

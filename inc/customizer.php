@@ -143,7 +143,6 @@
 			  'settings' => 'showcase_image_a',
 	  		)));
 
-
 		//Title setting
 		$wp_customize->add_setting( 'showcase_item_title_a', array(
 			  'type' => 'theme_mod',
@@ -227,7 +226,7 @@
 		//Text Controls 
 		$wp_customize->add_control( 'showcase_text_b', array(
 			  'priority' => 3, // Within the section.
-			  'section' => 'showcase_section_B', // Required, core or custom.
+			  'section' => 'showcase_section_b', // Required, core or custom.
 			  'label' => __( 'Description', 'iwebsg' ),
 	  		));
 
