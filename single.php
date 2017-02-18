@@ -11,7 +11,7 @@
 					<p><?php the_content(); ?></p>
 					<br>
 					<div class="go-back">
-						<a href="#">Go back</a>
+						<a href="www.iwebsg.com/articles">Go back</a>
 					</div>
 				</section>
 			</div>

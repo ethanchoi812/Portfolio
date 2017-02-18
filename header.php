@@ -4,7 +4,7 @@
 	<title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
 	<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/font-awesome.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Droid+Serif" rel="stylesheet">
 </head>
 <body>
 	<header class="primary-header container group">
