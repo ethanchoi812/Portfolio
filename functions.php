@@ -28,6 +28,15 @@ function init_widgets($id){
 		'before_title' => '<div class="section-heading"><h2>',
 		'after_title'	=> '</h2></div>'
 		));
+
+	register_sidebar(array(
+		'name'		=> 'Contact Widget',
+		'id'		=> 'contact-widget',
+		'before_widget'	=> '<div class="sidebar-widget contact-widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<div class="section-heading"><h2>',
+		'after_title'	=> '</h2></div>'
+		));
 }
 
 add_action('widgets_init', 'init_widgets');

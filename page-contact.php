@@ -11,11 +11,6 @@
 		<section class="col-2-3">	
 			<?php the_content(); ?>
 			</section>
-			<section class="col-1-3 sidebar">
-				<?php if(is_active_sidebar('contact-widget')) : ?>
-		         <?php dynamic_sidebar('contact-widget'); ?>
-		       <?php endif; ?>
-		    </section>
 		</div>
 	</section>
 	<?php endwhile; ?>

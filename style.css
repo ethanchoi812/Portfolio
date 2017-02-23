@@ -124,7 +124,7 @@ table {
 
 .row {
   background: #fff;
-  padding: 66px 0 44px 0;
+  padding: 66px 0 66px 0;  
 }
 
 .row-alt {
@@ -169,7 +169,7 @@ h1 {
 h2 {
   font-size: 32px;
   line-height: 44px;
-  color:#8e8e8e;
+  color:#b29337;
 }
 
 h3 {
@@ -235,6 +235,18 @@ blockquote{
 .btn-alt:hover {
   background: #fff;
   color: #648880;
+}
+
+.btn-primary {
+  padding: 10px 30px;
+  border: 1px solid #2576C1;
+  background-color: none;
+  color: #2576C1;
+}
+
+.btn-primary:hover {
+  background-color: #2576C1;
+  color: #fff;
 }
 
 /*
@@ -419,10 +431,14 @@ body {
   
 }
 
+.portfolio-showcase {
+  border-right: 1px dotted #e0e0e0;
+}
+
 .section-heading h2{
   font-family: 'Droid Serif', serif;
-  margin-bottom: 44px;
-  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 22px;
+  border-bottom: 2px solid #b29337;
   text-align: center;
 }
 
@@ -444,13 +460,19 @@ body {
 }
 
 .sub-section {
-  margin-bottom: 52px;
+  margin-bottom: 22px;
+  padding-top:22px;
+  padding-left: 12px;
+}
+
+.teaser{
+  margin-bottom: 22px;
   padding-top:22px;
   padding-left: 12px;
 }
 
 .teaser:hover{
-  background-color: #e2ffff;
+	box-shadow: 5px 5px 15px #888888;
 }
 
 .teaser h3:hover, .read-more h3:hover{
@@ -467,6 +489,7 @@ body {
 
 .read-more {
   text-align: center;
+  margin-top: 66px;
 }
 
 .read-more-blog a{
@@ -549,7 +572,59 @@ body {
   margin-bottom: 12px;
 }
 
+.contact-widget i{
+  color: #ccc;
+  margin-right: 20px;
+}
+
+.contact-widget i:hover{
+  color: #333;
+}
+.contact-widget-btn {
+  margin-top: 22px;
+}
+
 .see-all{
   margin-top: 12px;
   text-align: center;
+}
+
+/*
+========================================
+  Contact Form
+========================================
+*/
+
+.wpcf7 label{
+  font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-bottom: 15px;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea{
+  border-radius: 5px;
+  font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding:7px;
+}
+
+.wpcf7 input[type="submit"],
+.wpcf7 input[type="button"]{
+  padding: 10px 30px;
+  border: 1px solid #2576C1;
+  background-color: #fff;
+  color: #2576C1;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.wpcf7 input[type="submit"]:hover,
+.wpcf7 input[type="button"]:hover {
+  background-color: #2576C1;
+  color: #fff;    
 }
